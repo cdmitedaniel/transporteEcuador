@@ -1,0 +1,67 @@
+<!-- nav -->
+<nav class="navbar navbar-expand navbar-dark bg-primary" *ngIf="currentUser">
+    <div class="navbar-nav">
+        <a class="nav-item nav-link" routerLink="/">Home</a>
+        <a class="nav-item nav-link" (click)="logout()">Cerrar sesión</a>
+    </div>
+</nav>
+
+
+
+<!-- main app container -->
+<div class="container">
+<div class="jumbotron" style="background-image: url(http://transportesecuador.com.ec/wp-content/uploads/2018/04/BannerTest2-600x263.jpg); background-size: 100%;">
+    
+        <div class="row">
+            <div class="col-sm-6 offset-sm-3">
+                <alert></alert>
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="jumbotron">
+<div class="card-group">
+    <div class="card">
+      <img src="http://www.scaneq.com.ec/wp/wp-content/uploads/2016/09/Ecuador-04.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+      <div class="card-footer">
+        <button type="button" class="btn btn-primary">Primary</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="http://www.scaneq.com.ec/wp/wp-content/uploads/2016/09/Ecuador-04.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      </div>
+      <div class="card-footer">
+        <button type="button" class="btn btn-primary">Primary</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="http://www.scaneq.com.ec/wp/wp-content/uploads/2016/09/Ecuador-04.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      </div>
+      <div class="card-footer">
+        <button type="button" class="btn btn-primary">Primary</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- credits -->
+<div class="text-center">
+    <p>
+        <a href="http://transportesecuador.com.ec/sugerencias/" target="_top">Envíanos tus comentaros y sugerencias, estas son muy importantes para nosotros.</a>
+    </p>
+    <p>
+        <a href="http://transportesecuador.com.ec/" target="_top">Transportes Ecuador</a>
+    </p>
+</div>
